@@ -1,0 +1,22 @@
+body {
+    margin: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #202020
+}
+
+.printings {
+    color: purple;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+#text {
+    background-color: beige;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

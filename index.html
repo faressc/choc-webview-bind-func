@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<script>
+    function sliderChangeEvent(value) {
+        sliderValueUpdate({sliderValue: value})
+            .then((result) => { 
+                const data = JSON.parse(result);
+                document.getElementById("text").innerText = data.message;
+            })
+    }
+</script>
+
+<body>
+    <h1 id="header">Welcome to the gui!</h1>
+    <div>
+        <label for="slider", class="printings">Slider:</label>
+        <input type="range" id="slider" name="slider" min="0" max="100" oninput="sliderChangeEvent(this.value)">
+    </div>
+    <p id="text", class="printings">Callback printout...</p>
+</body>
+
+</html>
