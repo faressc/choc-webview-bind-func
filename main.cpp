@@ -3,7 +3,7 @@
 #include "modules/choc/gui/choc_MessageLoop.h"
 #include <iostream>
 
-int i = 0;
+const std::string HTML_FILE = "file:///home/faressc/faressc/web-cpp/choc-webview-bind-func/index.html";
 
 int main()
 {
@@ -37,8 +37,7 @@ int main()
         return choc::value::createString (return_message);
     }));
 
-    // webview.navigate("file:///home/leto/ak/choc_webview_test/test.html");
-    webview.navigate("file:///home/faressc/tu-studio/choc_webview_test/index.html");
+    webview.navigate(HTML_FILE);
 
     window.toFront();
     choc::messageloop::run();
